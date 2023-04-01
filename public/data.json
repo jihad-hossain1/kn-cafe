@@ -1,0 +1,52 @@
+[
+    {
+		"authorName": "Benedict Giles",
+		"publishDate": "11/28/22",
+		"readTime": 23,
+		"tag_name": "#design #mechanism",
+		"id": "453435",
+		"author_image": "https://images.unsplash.com/photo-1480429370139-e0132c086e2a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80",
+		"cover_image": "https://plus.unsplash.com/premium_photo-1658506695315-467a0a5c5f8f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+		"blogTitle": "Domain Driven Design in Action: A Cohesive Mechanism From the Trenches"
+	},
+	{
+		"authorName": "Odysseus Gray",
+		"publishDate": "12/26/22",
+		"readTime": 25,
+		"tag_name": "#leader #grow_up",
+		"id": "20557",
+		"author_image": "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80",
+		"cover_image": "https://images.unsplash.com/photo-1622676017526-4a8e99f5fdf3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+		"blogTitle": "How Leaders Can Get the Actionable Feedback They Need to Grow"
+	},
+	{
+		"authorName": "Geoffrey Wynn",
+		"publishDate": "05/06/23",
+		"readTime": 13,
+		"tag_name": "#compiler #javascript",
+		"id": "977321",
+		"author_image": "https://images.unsplash.com/photo-1600878459138-e1123b37cb30?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=706&q=80",
+		"cover_image": "https://images.unsplash.com/photo-1670057037226-b3d65909424f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+		"blogTitle": "Writing a Compiler by Leveraging JavaScripts Type Coercion"
+	},
+    {
+		"authorName": "Stewart Kennedy",
+		"publishDate": "01/04/24",
+		"readTime": 45,
+		"tag_name": "#performance #architecture",
+		"id": "00977",
+		"author_image": "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+		"cover_image": "https://miro.medium.com/v2/resize:fit:720/0*SW_Po_3QlLoyBP3P",
+		"blogTitle": "From Performance Reviews to Awards: The Power of Articulating Impact"
+	},
+	{
+		"authorName": "Vera James",
+		"publishDate": "03/22/24",
+		"readTime": 11,
+		"tag_name": "#openAi #apple_siri",
+		"id": "968338",
+		"author_image": "https://images.unsplash.com/photo-1590086782957-93c06ef21604?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+		"cover_image": "https://images.unsplash.com/photo-1605379399642-870262d3d051?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1206&q=80",
+		"blogTitle": "Jarvis: an Experiment Leveraging the OpenAI API, Apple Homekit, and Siri"
+	}
+]
