@@ -4,7 +4,7 @@ const SideCart = (props) => {
     const cart = props.cart;
     // console.log(props);
     const times = props.times;
-
+    console.log(cart);
     let total = 0;
     for (const tim of times) {
         total = total + tim.readTime
@@ -20,7 +20,8 @@ const SideCart = (props) => {
             <div className="sticky top-0 ">
                 <div className="bg-slate-200 rounded p-2">
                     <h2>Time spend: {total} min</h2>
-                <h3>Bookmarked: {cart.length} </h3>
+                    <h3>Bookmarked: {cart.length} </h3>
+                    <p>Qty: </p>
                 </div>
                 <div className="bg-slate-200  py-1">
                     {

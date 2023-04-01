@@ -15,9 +15,29 @@ const Home = () => {
         })
     }, []);
     useEffect(() => {
+        // console.log(blogs);
         const storedCart = getShoppingCart();
-        console.log(storedCart);
-    },[])
+        const savedBlog = [];
+        // step-1: get id of the addedProduct
+        // console.log(storedCart);
+        for (const id in storedCart) {
+            // step 2: get blog from blogs state by using id
+            // console.log('blogs',blogs);
+            const addedBlogs = blogs.find(blog => blog.id === id);
+            // console.log(savedBlogs);
+            if (addedBlogs) {
+                // step 3: add quantity
+                const quantity = storedCart[id]
+                addedBlogs.quantity = quantity;
+                // step 4: added the added blog to the saved cart
+                savedBlog.push(addedBlogs);
+            }
+            // const quantity = storedCart[id];
+            console.log(addedBlogs);
+        }
+        // step 5: set the cart
+        setCart(savedBlog)
+    },[blogs])
     const handleTime = (blog) => {
         const newTime = [...times, blog]
         setTimes(newTime);
