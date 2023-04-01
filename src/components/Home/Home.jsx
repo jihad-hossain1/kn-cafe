@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import SingleCart from '../Cart/SingleCart';
 import SideCart from '../SideCart/SideCart';
 import { addToDb, getShoppingCart } from '../utilites/fakedb';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Home = () => {
     const [blogs, setBlogs] = useState([]);
@@ -33,7 +35,7 @@ const Home = () => {
                 savedBlog.push(addedBlogs);
             }
             // const quantity = storedCart[id];
-            console.log(addedBlogs);
+            // console.log(addedBlogs);
         }
         // step 5: set the cart
         setCart(savedBlog)
@@ -44,7 +46,23 @@ const Home = () => {
     }
     const handleAddToCart = (blog) => {
         // setCart(blog);
-        const newCart = [...cart, blog];
+        let newCart = [];
+        //
+        // const newCart = [...cart, blog];
+        // if product does't exist in the cart, then set quantity = 1;
+        // if exist qudate quantiy by 1
+        const exists = cart.find(pd => pd.id === blog.id);
+        if (!exists) {
+            
+            blog.quantity = 1;   
+            newCart = [...cart, blog]
+            
+        } else {
+            exists.quantity = exists.quantity + 1;
+            const remaining = cart.filter(pd => pd.id !== blog.id);
+            newCart = [...remaining, exists];
+            toast("already bookmark!!!!");
+        }
         setCart(newCart);
         addToDb(blog.id);
     }
@@ -74,6 +92,7 @@ const Home = () => {
                     
                 </div>
             </div>
+            <ToastContainer />
         </>
     );
 };
