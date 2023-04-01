@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import SingleCart from '../Cart/SingleCart';
 import SideCart from '../SideCart/SideCart';
+import { addToDb, getShoppingCart } from '../utilites/fakedb';
 
 const Home = () => {
     const [blogs, setBlogs] = useState([]);
@@ -13,6 +14,10 @@ const Home = () => {
             setBlogs(data);
         })
     }, []);
+    useEffect(() => {
+        const storedCart = getShoppingCart();
+        console.log(storedCart);
+    },[])
     const handleTime = (blog) => {
         const newTime = [...times, blog]
         setTimes(newTime);
@@ -20,8 +25,10 @@ const Home = () => {
     const handleAddToCart = (blog) => {
         // setCart(blog);
         const newCart = [...cart, blog];
-        setCart(newCart)
+        setCart(newCart);
+        addToDb(blog.id);
     }
+
     
 
 
@@ -39,7 +46,7 @@ const Home = () => {
                 }    
                 </div>
 
-                <div className="border bottom-3 text-center relative">
+                <div className="border bottom-3 relative">
                  
                     <SideCart cart={cart}
                             times={times}
