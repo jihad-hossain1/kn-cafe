@@ -10,7 +10,7 @@ const SingleCart = (props) => {
 
     return (
         <>
-            <div className="card card-compact w-full bg-base-100 shadow mb-3">
+            <div className="card card-compact w-full bg-base-100 shadow mb-3 ">
                 <figure><img src={cover_image} alt="blog" /></figure>
                 <div className="card-body">
                     <div className="flex justify-between">

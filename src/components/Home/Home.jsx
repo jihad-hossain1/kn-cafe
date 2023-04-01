@@ -61,7 +61,12 @@ const Home = () => {
             exists.quantity = exists.quantity + 1;
             const remaining = cart.filter(pd => pd.id !== blog.id);
             newCart = [...remaining, exists];
-            toast("already bookmark!!!!");
+            // toast("already bookmark!!!!");
+            toast.warning('You Already Bookmarked !', {
+        position: toast.POSITION.TOP_LEFT
+    });
+
+
         }
         setCart(newCart);
         addToDb(blog.id);
@@ -72,8 +77,8 @@ const Home = () => {
 
     return (
         <>
-            <div className="grid md:grid-cols-[2fr,1fr] lg:grid-cols-[4fr,1fr] m-2 gap-2">
-                <div className="grid grid-cols-1  border border-spacing-1">
+            <div className="grid md:grid-cols-[2fr,1fr] gap-2">
+                <div className="grid grid-cols-1 ">
                     {
                         blogs.map(blog => <SingleCart
                             blog={blog}
@@ -84,7 +89,7 @@ const Home = () => {
                 }    
                 </div>
 
-                <div className="border bottom-3 relative">
+                <div className="relative ">
                  
                     <SideCart cart={cart}
                             times={times}
